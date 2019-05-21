@@ -10,6 +10,132 @@ body {
 	font-style: normal;
 	font-weight: 200;
 }
+
+.topnav {
+    margin: 40px 0 0 5%;
+    width: 95%;
+    height: 60px;
+    display: flex;
+    background-color: transparent;
+}
+ .topnav a {
+        float: center;
+        
+        color: white;
+        text-align: center;
+        padding: 14px 100px;
+        text-decoration: none;
+	 
+        font-size: 20px;
+    }
+.topnav a:hover {
+        border-radius: 1% 50%;  
+        
+        color: rgba(7,96,196,0.92);
+
+    }
+
+.icon {
+        display: none;
+    }
+/*MENU*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url("../Exported from design/Home screen/Menu/menubgr.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: darkorange;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    font-size: 60px;
+}
+
+.signtext {
+    position: absolute;
+    bottom: 150%;
+    left: 45%;
+}
+
+.overlay .signtext:hover,
+.overlay .signtext:focus {
+    color: #FABF40;
+}
+
+.overlay .signtext {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: table;
+    transition: 0.3s;
+}
+
+.signicon {
+    position: absolute;
+    bottom: 150%;
+    left: 32%;
+}
+
+.menulogo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+    position: absolute;
+    top: 600px;
+}
+
+/*MENU END*/
+
+
+
+#logo-navbar-middle{
+	margin: -75px 0 ;
+}
+
+
+
+
+
+
+
+
+
 /* Container */
 .container {
 	width: 100%;
@@ -79,18 +205,7 @@ ul li:hover a {
 	padding-top: 460px;
 	padding-bottom: 460px;
 }
-.light {
-	font-weight: bold;
-	color: #717070;
-}
-.tagline {
-	text-align: center;
-	color: #FFFFFF;
-	margin-top: 4px;
-	font-weight: lighter;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
+
 /* About Section */
 .text_column {
 	width: 29%;
@@ -263,94 +378,21 @@ footer {
 	display: none;
 }
 
-/* Mobile */
-@media (max-width: 320px) {
-.logo {
-	width: 100%;
-	text-align: center;
-	margin-top: 13px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-}
-.container header nav {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	width: 100%;
-	float: none;
-	display: none;
-}
-header nav ul {
-}
-nav ul li {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	width: 100%;
-	text-align: center;
-}
-.text_column {
-	width: 100%;
-	text-align: justify;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-}
-.thumbnail {
-	width: 100%;
-}
-.footer_column {
-	width: 100%;
-	margin-top: 0px;
-}
-.parallax {
-	text-align: center;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 40%;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	width: 100%;
-	font-size: 18px;
-}
-.parallax_description {
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	width: 90%;
-	margin-top: 25px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 12px;
-	float: none;
-	text-align: center;
-}
-.banner {
-	background-color: #2D9AB7;
-	background-image: none;
-}
-.tagline {
-	margin-top: 20px;
-	line-height: 22px;
-}
-.hero_header {
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 22px;
-	text-align: center;
-}
-}
+
 
 /* Small Tablets */
 @media (min-width: 321px)and (max-width: 767px) {
+	.topnav a {
+		display: none;
+	}
+	.icon {
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    display: flex;
+}
+	
 .logo {
 	width: 100%;
 	text-align: center;

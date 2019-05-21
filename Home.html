@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Light Theme</title>
+<title>Home</title>
 
 
 <link href="css/incss.css" rel="stylesheet" type="text/css">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
 <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
 
@@ -21,19 +21,33 @@
   <section class="hero" id="hero">
 	  <!-- Navigation -->
   
-    <h2 class="hero_header">HERO <span class="light">LIGHT</span></h2>
-    <p class="tagline">Light is a simple one page website</p>
-	  <header> <a href="">
-    </a>
-    <nav>
-      <ul>
-        <li><a href="#hero">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li> <a href="#contact">CONTACT</a></li>
-		  <li> <a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
+   <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#" class="active" style="font-size: 1.5rem;">Gallery</a>
+            <a href="#" style="font-size: 1.5rem;">New Trends</a>
+            <a href="#" style="font-size: 1.5rem;">About Us</a>
+			<a href="#" style="font-size: 1.5rem;">Contact Us</a>
+
+        </div>
+        <img class="menulogo" src="Exported from design/Home screen/Menu/orangelogo.png" alt="menulogo">
+    </div>
+
+    <div class="container1">
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="active" style="font-size: 1.5rem;">Gallery</a>
+            <a href="#" style="font-size: 1.5rem;">New Trends</a>
+			<a href="#"><img id="logo-navbar-middle" src="images/logo.png" width="500" alt="Logo Thing main logo"></a>
+            <a href="#" style="font-size: 1.5rem;">About Us</a>
+			<a href="#" style="font-size: 1.5rem;">Contact Us</a>
+
+            
+            <div class="icon">
+                <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
+            </div>
+            
+        </div>
+	  </div>
   </section>
   <!-- About Section -->
   <section class="about" id="about">
@@ -67,7 +81,7 @@
   </div>
   <!-- Parallax Section -->
   <section class="banner">
-    <h2 class="parallax">PARALLAX HERO</h2>
+    <h2 class="parallax">PARALLAX </h2>
     <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
   </section>
   <!-- More Info Section -->
@@ -90,8 +104,26 @@
     <div class="button">subscribe</div>
   </section>
   <!-- Copyrights Section -->
-  <div class="copyright">&copy;2015 - <strong>Light Theme</strong></div>
+  <div class="copyright">&copy;2019 - <strong>Lystrup Frisør</strong></div>
 </div>
 <!-- Main Container Ends -->
 </body>
+	<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+    $(function() {
+        $('a[href*=#]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 500, 'linear');
+        });
+    });
+
+</script>
 </html>
