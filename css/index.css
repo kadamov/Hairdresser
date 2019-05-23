@@ -89,5 +89,51 @@ width: 600px;
         opacity: 0;
     }
 }
+@media (min-width: 321px)and (max-width: 767px) {
+
+	.loader-frame {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+		right: 60%;
+		top: 5%;
+}
+	.loader1,
+.loader2 {
+    position: absolute;
+    border: 5px solid transparent;
+    border-radius: 50%;
+}
+	.logoimg{ 
+width: 360px;
+	position: relative;
+	top: 250px;
+	left: 90px;
+}
+
+.loader1 {
+    width: 500px;
+    height: 600px;
+    border-top: 50px solid  rgba(19,13,166,0.40);
+    border-bottom: 50px solid rgba(19,13,166,0.40);
+    animation: clockwisespin 2s linear 3;
+}
+
+.loader2 {
+    width: 400px;
+    height: 600px;
+    border-left: 50px solid white;
+    border-right: 50px solid white;
+    top: 60px;
+    left: 5px;
+    animation: anticlockwisespin 2s linear 3;
+}
+	
+	
+	
+	
+	
+}
 
 	

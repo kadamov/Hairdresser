@@ -2,11 +2,15 @@
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
+	<meta name="keywords" content="Barber,Hairdresser,Hair,care,Lystrup,Salon,beauty..">
+    <meta name="author" content="K.A">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/shortcut.png">
 <title>Home</title>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="css/incss.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
@@ -19,25 +23,34 @@
   
   <!-- Hero Section -->
   <section class="hero" id="hero">
+	  <div class="worktime">
+	  <h3 class="workingtime"> 
+Monday  - Closed<br><br>
+Tuesday  -  10:00 - 18:00<br><br>
+Wednesday -  10:00 - 18:00<br><br>
+Thursday  -  10:00 - 18:00<br><br>
+Friday  -  10:00 - 18:00<br><br>
+Saturday  -  10:00 - 15:00<br><br>
+Sunday  -  10:00 - 15:00</h3></div>
 	  <!-- Navigation -->
   
    <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="#" class="active" style="font-size: 1.5rem;">Gallery</a>
-            <a href="#" style="font-size: 1.5rem;">New Trends</a>
-            <a href="#" style="font-size: 1.5rem;">About Us</a>
-			<a href="#" style="font-size: 1.5rem;">Contact Us</a>
+            <a href="#" class="active" style="font-size: 2rem;">Gallery</a>
+            <a href="#" style="font-size: 2rem;">New Trends</a>
+            <a href="#" style="font-size: 2rem;">About Us</a>
+			<a href="#" style="font-size: 2rem;">Contact Us</a>
 
         </div>
-        <img class="menulogo" src="Exported from design/Home screen/Menu/orangelogo.png" alt="menulogo">
+        
     </div>
 
     <div class="container1">
         <div class="topnav" id="myTopnav">
             <a href="#" class="active" style="font-size: 1.5rem;">Gallery</a>
             <a href="#" style="font-size: 1.5rem;">New Trends</a>
-			<a href="#"><img id="logo-navbar-middle" src="images/logo.png" width="500" alt="Logo Thing main logo"></a>
+			<a href="Home.html"><img id="logo-navbar-middle" src="images/logo.png" alt="Logo Thing main logo"></a>
             <a href="#" style="font-size: 1.5rem;">About Us</a>
 			<a href="#" style="font-size: 1.5rem;">Contact Us</a>
 
@@ -49,59 +62,122 @@
         </div>
 	  </div>
   </section>
-  <!-- About Section -->
-  <section class="about" id="about">
-    <h2 class="hidden">About</h2>
-    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-  </section>
-  <!-- Stats Gallery Section -->
-  <div class="gallery">
-    <div class="thumbnail">
-      <h1 class="stats">1500</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">2300</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">7500</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">9870</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
+	
+	<div class="socialcontainer">
+  <div class="socialbutton">Social Media</div>
+  <div class="social twitter"><a href="https://www.facebook.com/LystrupFrisoer/" target="_blank"><i class="fa fa-instagram"></i></a></div>
+  <div class="social facebook"><a href="https://www.facebook.com/LystrupFrisoer/" target="_blank"><i class="fa fa-facebook"></i></a></div>
+  <div class=" social google"><i class="fa fa-google-plus"></i></div>
+  <div class="social youtube"><a href="https://www.facebook.com/LystrupFrisoer/" target="_blank"><i class="fa fa-youtube"></i></a></div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+  	</filter>
+  </defs>
+</svg>
+	
+	
+	<label class="buttoncall" for="modal-1"></label>
+	<input class="modal-state" id="modal-1" type="checkbox" />
+<div class="modal">
+  <label class="modal__bg" for="modal-1"></label>
+  <div class="modal__inner">
+    <label class="modal__close" for="modal-1"></label>
+    <h1 style="text-align: center;">Write down the number and make an reservation!</h1>
+	  <br>
+	  <br>
+	  <h1 id="number">+45 26 11 21 08</h1>
+	  <img class="congrats" src="images/congrats.png" alt="Congratualations">
   </div>
+</div>
+	
+	<a class="buttonlocation" href="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d2217.7175539778127!2d10.235574015949153!3d56.231115980683924!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d56.2311145!2d10.2374835!4m5!1s0x464c3dd9187503ad%3A0xf2f7d897f5095fc0!2slystrup+fris%C3%B8r!3m2!1d56.2311925!2d10.238004!5e0!3m2!1sbg!2sdk!4v1558442992490!5m2!1sbg!2sdk"></a>
+  <!-- About Section -->
+  <div class="banner">
+	    <ul>
+	        <li>
+		        
+			</li>
+	        <li>
+	        	<div class="client-group commercial">
+		        	<h3>Our Clients Are Recognized Brands</h3>
+		        	<div class="one-fourth first">
+						<div class="client graham-holdings-logo"></div>
+						<h4>Graham Holdings</h4>
+					</div>
+					<div class="one-fourth">
+						<div class="client k12-logo"></div>
+						<h4>K12 Inc</h4>
+					</div>
+					<div class="one-fourth">
+						<div class="client blackboard-logo"></div>
+						<h4>Blackboard Inc</h4>
+					</div>
+					<div class="one-fourth">
+						<div class="client kaplan-university-logo"></div>
+						<h4>Kaplan University</h4>
+					</div>	
+				</div>	        
+	        </li>
+	    </ul>
+   
+	</div>
+  
   <!-- Parallax Section -->
-  <section class="banner">
-    <h2 class="parallax">PARALLAX </h2>
-    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-  </section>
+  <div id="slidy-container">
+  <figure id="slidy">
+    <img src="images/hair1.jpg" alt="eyes" >
+    <img src="images/har2.jpg" alt="lou" >
+    <img src="images/hair3.jpg" alt="lucie-2" >
+    <img src="images/hair4.jpg" alt="lucie" > 
+  </figure>
+</div>
   <!-- More Info Section -->
   <footer>
+	  <h2 style="text-align: center;font-family: 'montserrat', sans-serif;
+	text-transform: uppercase;
+	color: #555;">BLOG<br>Top hairstyles 2019</h2>
     <article class="footer_column">
-      <h3>ABOUT</h3>
-      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+      <h3>MENS</h3>
+      <img src="images/mens.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>This year has seen all kinds of new hairstyles with shaved lines, fresh fades, and bold silhouettes. These trends have also made their way into facial hair.Check out these new ways to wear a beard with slashes, fades, and more. Whether facial … </p>
+    </article>
+	  <article class="footer_column">
+      <h3>KIDS</h3>
+      <img src="images/kids.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Kids haircuts can be short and easy, unique or somewhere in between. These cool boys haircuts feature classic cuts, hot trends and all around good looks.There's no reason not to get creative with kids hair. Color, hair designs or trendy cuts may …</p>
     </article>
     <article class="footer_column">
-      <h3>LOCATION</h3>
-      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+      <h3>WOMENS</h3>
+      <img src="images/womans.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>The constant desire to be perfect, to experience hair length and haircut, is inherent to almost every modern girl. Fashion plays an important role in choosing and changing the image. But you should strictly follow fashion trends, any haircut is selected based on hair structure, face shape, and physical appearance features. Fashion Trends 2019 are a range of classic shapes, lightness, natural hair shine and natural hairstyles..</p>
     </article>
   </footer>
   <!-- Footer Section -->
-  <section class="footer_banner" id="contact">
+  <section class="footer_banner2" id="contact">
     <h2 class="hidden">Footer Banner Section </h2>
     <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
-    <div class="button">subscribe</div>
+    <div class="container4">
+
+        <form id="singular-form" action="Home.html">
+
+            <button class="shown" type="button" id="trigger">Notify me</button>
+
+            <div id="input-containernotif">
+                <input type="text" placeholder="E-mail">
+                <button type="button">Send</button>
+            </div>
+
+            <div id="success">Thank you!</div>
+
+        </form>
+
+    </div>
   </section>
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2019 - <strong>Lystrup Frisør</strong></div>
@@ -124,6 +200,133 @@
             }, 500, 'linear');
         });
     });
+		
+$(".socialbutton").click(function(){
+  $(".social.twitter").toggleClass("clicked");
+  $(".social.facebook").toggleClass("clicked");
+ $(".social.google").toggleClass("clicked");
+  $(".social.youtube").toggleClass("clicked");
+})
+		
+		
+		$(function() {
+    $('.banner').unslider({
+      //  Enable keyboard arrows
+      keys: true,               
+			// Enable dot nav
+      dots: true,
+      delay: 7000
+    });
+});
+		
+		/* user defined variables */
+var timeOnSlide = 3, 		
+    // the time each image will remain static on the screen, measured in seconds
+timeBetweenSlides = 1, 	
+    // the time taken to transition between images, measured in seconds
 
+// test if the browser supports animation, and if it needs a vendor prefix to do so
+    animationstring = 'animation',
+    animation = false,
+    keyframeprefix = '',
+    domPrefixes = 'Webkit Moz O Khtml'.split(' '), 
+    // array of possible vendor prefixes
+    pfx  = '',
+    slidy = document.getElementById("slidy"); 
+if (slidy.style.animationName !== undefined) { animation = true; } 
+// browser supports keyframe animation w/o prefixes
+
+if( animation === false ) {
+  for( var i = 0; i < domPrefixes.length; i++ ) {
+    if( slidy.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
+      pfx = domPrefixes[ i ];
+      animationstring = pfx + 'Animation';
+      keyframeprefix = '-' + pfx.toLowerCase() + '-';
+      animation = true;
+      break;
+    }
+  }
+}
+
+if( animation === false ) {
+  // animate in JavaScript fallback
+} else {
+  var images = slidy.getElementsByTagName("img"),
+      firstImg = images[0], 
+      // get the first image inside the "slidy" element.
+      imgWrap = firstImg.cloneNode(false);  // copy it.
+  slidy.appendChild(imgWrap); // add the clone to the end of the images
+  var imgCount = images.length, // count the number of images in the slide, including the new cloned element
+      totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount - 1), // calculate the total length of the animation by multiplying the number of _actual_ images by the amount of time for both static display of each image and motion between them
+      slideRatio = (timeOnSlide / totalTime)*100, // determine the percentage of time an induvidual image is held static during the animation
+      moveRatio = (timeBetweenSlides / totalTime)*100, // determine the percentage of time for an individual movement
+      basePercentage = 100/imgCount, // work out how wide each image should be in the slidy, as a percentage.
+      position = 0, // set the initial position of the slidy element
+      css = document.createElement("style"); // start marking a new style sheet
+  css.type = "text/css";
+  css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n"; // set the width for the slidy container
+  css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }\n";
+  css.innerHTML += "@"+keyframeprefix+"keyframes slidy {\n"; 
+  for (i=0;i<(imgCount-1); i++) { // 
+    position+= slideRatio; // make the keyframe the position of the image
+    css.innerHTML += position+"% { left: -"+(i * 100)+"%; }\n";
+    position += moveRatio; // make the postion for the _next_ slide
+    css.innerHTML += position+"% { left: -"+((i+1) * 100)+"%; }\n";
+}
+  css.innerHTML += "}\n";
+  css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n"; // call on the completed keyframe animation sequence
+document.body.appendChild(css); // add the new stylesheet to the end of the document
+}
+
+		
+		
+		const sf = {};
+
+sf.container4 = document.querySelector('.container4');
+sf.form = document.querySelector('.container4 > #singular-form');
+sf.trigger = document.querySelector('.container4 > #singular-form > button#trigger');
+sf.input = document.querySelector('.container4>#singular-form>#input-containernotif>input');
+sf.submitButton = document.querySelector('.container4 > #singular-form > #input-containernotif > button');
+sf.successMessage = document.querySelector('.container4 > #singular-form > #success');
+
+sf.submitDelay = 1500;
+
+sf.clickHandler = (e) => {
+    switch (e.target) {
+        case sf.trigger:
+            console.log('case trigger');
+            sf.container4.style.width = '21rem'
+            e.target.classList.remove('shown');
+            sf.input.classList.add('shown');
+            sf.submitButton.classList.add('shown');
+            sf.input.focus();
+            break;
+        case sf.submitButton:
+            sf.submitForm();
+            break;
+    }
+}
+
+sf.handleInputKeypress = (e) => {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        sf.submitForm();
+    }
+}
+
+sf.submitForm = () => {
+    sf.input.style.transition = 'all .4s ease';
+    sf.submitButton.style.transition = 'all .4s ease';
+    sf.input.classList.remove('shown');
+    sf.submitButton.classList.remove('shown');
+    sf.container4.style.transition = 'all .4s cubic-bezier(0.47, 0.47, 0.27, 1.20) .4s';
+    sf.container4.style.width = '';
+    sf.successMessage.classList.add('shown');
+    let submission = setTimeout(() => sf.form.submit(), sf.submitDelay);
+}
+
+sf.input.addEventListener('keypress', (e) => sf.handleInputKeypress(e));
+document.addEventListener('click', (e) => sf.clickHandler(e));
+		
 </script>
 </html>
