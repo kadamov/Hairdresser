@@ -606,7 +606,7 @@ ul li:hover a {
 /* Hero Section */ 
 .hero { 
 	width: 100%; 
-	background-image: url("../images/aboutus.png"); 
+	background-image: url("../images/aboutusbgr.png"); 
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	padding-top: 460px; 
