@@ -11,6 +11,13 @@ body {
     font-style: normal;
     font-weight: 200;
 }
+.video {
+    width: 60%;
+	position: relative;
+	left: 20%;
+	bottom: 5rem;
+    height: auto;
+}
 
 #slidy-container {
     width: 80%;
@@ -24,10 +31,10 @@ body {
 }
 
 .socialcontainer {
-    display: flex;
+    display: fixed;
     position: absolute;
-    top: 0%;
-    left: 43%;
+    bottom: 78%;
+    left: 46.2%;
     justify-content: center;
     align-items: center;
     height: 20vh;
@@ -273,6 +280,7 @@ li:nth-child(2) {
     width: 100%;
     height: 60px;
     position: relative;
+	bottom: 200px;
     right: 1%;
     display: flex;
     background-color: transparent;
@@ -681,8 +689,8 @@ ul li:hover a {
     width: 100%;
     background-image: url("../images/BGR.png");
     background-size: cover;
-    padding-top: 460px;
-    padding-bottom: 460px;
+    padding-top: 350px;
+    padding-bottom: 20px;
 }
 
 /* About Section */
@@ -890,6 +898,20 @@ footer {
 
 /* Small Tablets */
 @media (min-width: 321px)and (max-width: 767px) {
+	 .topnav a {
+        display: none;
+    }
+
+    .icon {
+        float: left;
+        position: relative;
+        bottom: 1025%;
+        left: 25px;
+        display: flex;
+    }
+	.video{
+		display: none;
+	}
 
     .hero {
         width: 100%;
@@ -927,17 +949,7 @@ footer {
         filter: url('#goo');
     }
 
-    .topnav a {
-        display: none;
-    }
-
-    .icon {
-        float: left;
-        position: relative;
-        bottom: 1365%;
-        left: 25px;
-        display: flex;
-    }
+   
 
     .buttoncall {
         position: fixed;
